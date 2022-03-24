@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="companionMethods"></p>
+
+    <script>
+      new TypeIt("#companionMethods", {
+        speed: 50,
+        waitUntilVisible: true,
+      })
+        .type("Nvver", { delay: 300 })
+        .move(-3)
+        .delete(1)
+        .type("e")
+        .move("END")
+        .type(" let yees")
+        .pause(300)
+        .delete(2)
+        .type("sterday use up to muc")
+        .move(-4)
+        .type("o")
+        .move("END")
+        .type("h of today.")
+        .pause(500)
+        .break({ delay: 500 })
+        .break({ delay: 500 })
+        .type("<em>- Will Rogers</em>")
+        .go();
+    </script>
+  </body>
+</html>
+<!-- https://typeitjs.com/docs/react -->
